@@ -1,3 +1,11 @@
+Info about this fork
+--------------------
+Only difference is that JsLocalization\Utils\Helper has now two additional methods:
+- `addLocalesToExport`
+- `getAdditionalLocales`
+
+The purpouse/usage is similar to `JsLocalizationHelper::addMessagesToExport()` described in **Service providers** section.
+
 laravel-js-localization
 =======================
 [![Build Status](https://travis-ci.org/andywer/laravel-js-localization.svg?branch=laravel-5)](https://travis-ci.org/andywer/laravel-js-localization) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/andywer/laravel-js-localization/badges/quality-score.png?b=laravel-5)](https://scrutinizer-ci.com/g/andywer/laravel-js-localization/?branch=laravel-5) [![Code Coverage](https://scrutinizer-ci.com/g/andywer/laravel-js-localization/badges/coverage.png?b=laravel-5)](https://scrutinizer-ci.com/g/andywer/laravel-js-localization/?branch=laravel-5) [![Total Downloads](https://poser.pugx.org/andywer/js-localization/downloads.svg)](https://packagist.org/packages/andywer/js-localization)
