@@ -17,6 +17,9 @@ class Helper
      * @var array
      */
     protected $messagesToExport = [];
+    
+    
+    protected $localesToExport = [];
 
     /**
      * Allows registration of additional messages to
@@ -37,6 +40,16 @@ class Helper
                 $this->resolveMessageKeyArray($messageKeys)
             )
         );
+    }
+    
+    public function addLocalesToExport(array $locales)
+    {
+        $this->localesToExport = array_unique($locales);
+    }
+    
+    public function getAdditionalLocales()
+    {
+        return $this->localesToExport;
     }
 
     /**

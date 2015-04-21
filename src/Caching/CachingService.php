@@ -76,7 +76,12 @@ class CachingService
      */
     protected function getLocales()
     {
-        return Config::get('js-localization.locales');
+        $locales = Config::get('js-localization.locales');
+        $locales = array_unique(
+            array_merge($locales, JsLocalizationHelper::getAdditionalLocales())
+        );
+        
+        return $locales;
     }
 
     /**
